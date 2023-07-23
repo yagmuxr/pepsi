@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pepsi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <header class="header">
+        <img src="images/logo.png" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>That's What<br /><span>I Like</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            vitae officia fuga hic molestias porro!
+          </p>
+          <a href="#">View All Products</a>
+        </div>
+        <div class="imgBox">
+          <img src="images/pepsi001.png" class="pepsi" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="images/pepsi001.png"
+            onclick="imgSlider('images/pepsi001.png')"
+          />
+        </li>
+        <li>
+          <img
+            src="images/pepsi002.png"
+            onclick="imgSlider('images/pepsi002.png')"
+          />
+        </li>
+        <li>
+          <img
+            src="images/pepsi003.png"
+            onclick="imgSlider('images/pepsi003.png')"
+          />
+        </li>
+      </ul>
+      <ul class="sci">
+        <li><img src="images/facebook.png" /></li>
+        <li><img src="images/instagram.png" /></li>
+        <li><img src="images/twitter.png" /></li>
+      </ul>
+    </nav>
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".pepsi").src = anything;
+      }
+    </script>
+  </body>
+</html>
